@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 60px;">YouTube Search</h1>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Search for videos..." />
+            <button id="search-button" onclick="searchYouTube()">Search</button>
+        </div>
+    </div>
+
+    <div class="search-results" id="search-results"></div>
+
+    <!-- Miniplayer -->
+    <div id="miniplayer">
+        <button class="close-btn" onclick="closeMiniPlayer()">✖</button>
+        <iframe id="miniplayer-video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
